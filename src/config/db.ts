@@ -2,7 +2,6 @@ import moongose from "mongoose";
 require("dotenv").config();
 
 const db = process.env.DB_URL as string;
-
 const connectDb = async () => {
   try {
     await moongose.connect(db, {
